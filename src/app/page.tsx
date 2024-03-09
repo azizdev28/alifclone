@@ -1,11 +1,11 @@
-import Slider from "@/components/Slider";
 import React from "react";
-
+import Carusel from "@/components/Carusel";
 const Home = () => {
   return (
     <div>
-      Home
-      <Slider />
+      <div className="my-6">
+        <Carusel />
+      </div>
     </div>
   );
 };
