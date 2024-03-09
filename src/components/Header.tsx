@@ -21,7 +21,10 @@ const Header = () => {
           <Link href="/">
             <Image src={logo} alt="Logo" className="w-[112px] h-[32px]" />
           </Link>
-          <button onClick={toggleCatalog} className="flex items-center">
+          <button
+            onClick={toggleCatalog}
+            className="flex items-center bg-amber-300	px-12 py-2 rounded-xl gap-4"
+          >
             <GiHamburgerMenu />
             <span>Catalog</span>
           </button>
@@ -29,9 +32,9 @@ const Header = () => {
             <input
               type="text"
               placeholder="Searching..."
-              className="w-full py-2 px-3 rounded-xl"
+              className="w-full py-2.5 px-3 rounded-xl border-amber-300"
             />
-            <button className=" bg-orange-300 py-3.5 ml-[-35px] px-3 rounded-xl">
+            <button className=" bg-amber-300 py-3.5 ml-[-39px] px-3 rounded-r-xl">
               <FaSearch />
             </button>
           </form>
