@@ -1,46 +1,38 @@
-"use client";
+import React from "react";
+import Slider from "react-slick";
 
-import { Carousel } from "flowbite-react";
-import Image from "next/image";
-
-function Carusel() {
+function SimpleSlider() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-      <Carousel>
-        <Image
-          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-          alt="..."
-          width={1000}
-          height={50}
-        />
-
-        <Image
-          src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-          alt="..."
-          width={50}
-          height={50}
-        />
-        <Image
-          src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-          alt="..."
-          width={50}
-          height={50}
-        />
-        <Image
-          src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-          alt="..."
-          width={50}
-          height={50}
-        />
-        <Image
-          src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-          alt="..."
-          width={50}
-          height={50}
-        />
-      </Carousel>
+    <div className="slider-container">
+      <Slider {...settings}>
+        <div>
+          <h3>1</h3>
+        </div>
+        <div>
+          <h3>2</h3>
+        </div>
+        <div>
+          <h3>3</h3>
+        </div>
+        <div>
+          <h3>4</h3>
+        </div>
+        <div>
+          <h3>5</h3>
+        </div>
+        <div>
+          <h3>6</h3>
+        </div>
+      </Slider>
     </div>
   );
 }
 
-export default Carusel;
+export default SimpleSlider;
